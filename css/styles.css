@@ -1,0 +1,194 @@
+/* ESTILOS GENERALES */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #ececec;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.tab {
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+/* Estilos para los botones de los tabs */
+.tab button {
+  background-color: #fff;
+  float: left;
+  border: 1px solid #ccc;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 1em;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
+  margin: 0 0.5em 0 0;
+}
+
+/* Estilo para el botón activo */
+.tab button.active {
+  background-color: #226c07;
+  color: #fff;
+}
+
+/* Estilos para el contenido de los tabs */
+.tabcontent {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+/* Estilo para mostrar el contenido activo */
+.tabcontent.show {
+  display: block;
+}
+.container {
+  width: 100%;
+  max-width: 860px;
+}
+
+#temperatura,
+#distancia {
+  background-color: #fff;
+  padding: 32px 3em;
+  margin: 0px 0 0;
+  border-top: none;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: "Lato", sans-serif;
+  margin: 0 0 20px;
+}
+
+h2 {
+  padding: 12px 0 20px;
+  font-size: 1.5rem;
+}
+
+p {
+  line-height: 1.6;
+  margin: 0 0 30px;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px 1em;
+  margin: 0 0 36px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.results {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.results p {
+  font-size: 1.5rem;
+  display: inline;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    padding: 0 1em;
+    margin: 12px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 80px;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  input,
+  select {
+    padding: 10px 1em;
+    margin-bottom: 20px;
+  }
+
+  .results {
+    font-size: 2rem;
+  }
+
+  .results p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  .container {
+    padding: 0 2em;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 100px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+  }
+
+  input,
+  select {
+    padding: 10px 1em;
+    margin-bottom: 25px;
+  }
+
+  .results {
+    font-size: 2.5rem;
+  }
+
+  .results p {
+    font-size: 1.2rem;
+  }
+}

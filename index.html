@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Units converter</title>
+    <!-- Normalizar estilos -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato|Roboto"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <h1>Convertidor de unidades de medida</h1>
+        <div class="tab">
+          <button id="temperaturaBtn" class="tablinks">Temperatura</button>
+          <button id="distanciaBtn" class="tablinks">
+            Distancia y longitud
+          </button>
+        </div>
+
+        <div id="temperatura" class="tabcontent show">
+          <h2>Conversión de temperatura</h2>
+          <p>
+            Introduce un valor numérico en el campo y luego selecciona una
+            opción de la lista desplegable.
+          </p>
+
+          <form action="" novalidate>
+            <input type="text" id="temperatureInput" autocomplete="off" />
+            <select id="conversionType">
+              <option value="celsius">Convertir de Celsius a Fahrenheit</option>
+              <option value="fahrenheit">
+                Convertir de Fahrenheit a Celsius
+              </option>
+            </select>
+          </form>
+
+          <div class="results"></div>
+        </div>
+
+        <div id="distancia" class="tabcontent">
+          <h2>Conversión de distancia y longitud</h2>
+          <p>
+            Introduce un valor numérico en el campo y luego selecciona una
+            opción de la lista desplegable.
+          </p>
+
+          <form action="" novalidate>
+            <input type="text" id="lengthInput" autocomplete="off" />
+            <select id="conversionType2">
+              <option value="kilometro">Convertir de Kilómetro a Milla</option>
+              <option value="milla">Convertir de Milla a Kilómetro</option>
+            </select>
+          </form>
+
+          <div class="results"></div>
+        </div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>
